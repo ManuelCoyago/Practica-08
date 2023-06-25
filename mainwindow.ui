@@ -6,27 +6,37 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>750</height>
+    <width>746</width>
+    <height>476</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>750</width>
-    <height>750</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Buscar Directorios...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Downloads/buscar(1).png</normaloff>../Downloads/buscar(1).png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>30</y>
-      <width>551</width>
-      <height>71</height>
+      <x>70</x>
+      <y>0</y>
+      <width>621</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -35,14 +45,17 @@
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>10</y>
-       <width>531</width>
-       <height>61</height>
+       <width>601</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="autoFillBackground">
-      <bool>true</bool>
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid #cccccc;</string>
      </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
@@ -53,40 +66,82 @@
      <property name="lineWidth">
       <number>3</number>
      </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>106</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Buscar directorio:</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
        <rect>
-        <x>127</x>
-        <y>13</y>
-        <width>281</width>
+        <x>90</x>
+        <y>0</y>
+        <width>481</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>420</x>
-        <y>10</y>
-        <width>71</width>
-        <height>41</height>
+        <x>570</x>
+        <y>0</y>
+        <width>31</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+
+</string>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Downloads/buscar(1).png</normaloff>../Downloads/buscar(1).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>25</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:black;</string>
+      </property>
+      <property name="text">
+       <string>Directorio</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -95,10 +150,50 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>120</y>
+      <y>60</y>
       <width>701</width>
-      <height>551</height>
+      <height>371</height>
      </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>129</green>
+          <blue>227</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Highlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="170">
+          <red>31</red>
+          <green>117</green>
+          <blue>204</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #cccccc;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -108,10 +203,22 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QTreeView" name="treeView"/>
+      <widget class="QTreeView" name="treeView">
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #cccccc;</string>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QTreeView" name="treeView_2"/>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="font">
+        <font/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+border: 1px solid #cccccc;</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -121,8 +228,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>750</width>
-     <height>24</height>
+     <width>746</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
